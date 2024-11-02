@@ -27,12 +27,6 @@ services:
     networks:
       - backend
 
-  nodejs-api:
-    image: m169-lb3-2024/nodejs:latest  # Die API-Software von Github
-    networks:
-      - backend
-    depends_on:
-      - mysql
 
 networks:
   backend:
